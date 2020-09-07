@@ -7,10 +7,14 @@ const patientSchema  = new mongoose.Schema({
         
     },
     phone:{
-        type:String,
+        type:Number,
         required:true,
         unique:true
-    }
+    },
+    reports:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Reports'
+    }]
 },
     
 {
@@ -18,5 +22,5 @@ const patientSchema  = new mongoose.Schema({
 }    
 )
 
-const Patients  = mongoose.model('Patient',patientSchema);
+const Patients  = mongoose.model('Patients',patientSchema);
 module.exports  = Patients;
