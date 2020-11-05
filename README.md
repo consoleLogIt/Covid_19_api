@@ -8,7 +8,7 @@ step2: In the terminal do`npm install` to download all the dependencies.
 do`npm start` to start the server.\
 
 ## Available routes
-api/v1/doctors/create-doctor (pass username and password).  `if doctor already registered return the doctor info` 
+api/v1/doctors/create-doctor (pass username and password).  `if doctor already registered return the doctor info` .\
 api/v1/doctors/create-session `returns the JWT to be used` .\
 api/v1/doctors/create-patient (pass name and phone)  `if patient already exists return the patient info` .\
 api/v1/patient/id/create-report (pass patient's id).\
