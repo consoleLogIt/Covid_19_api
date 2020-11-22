@@ -10,8 +10,8 @@ do`npm start` to start the server.\
 ## Available routes
 api/v1/doctor/create-doctor (pass username and password).  `if doctor already registered return the doctor info` .\
 api/v1/doctor/create-session `returns the JWT to be used` .\
-api/v1/doctor/create-patient (pass name and phone)  `if patient already exists return the patient info` .\
-api/v1/patient/id/create-report (pass patient's id).\
+api/v1/patient/create-patient (pass name and phone)  `if patient already exists return the patient info` .\
+api/v1/patient/id/create-report (pass patient's id, doctor's name and report status).\
 api/v1/patient/id/all-reports (pass patient's id) .\
 api/v1/report/status  `['Negative', 'Travelled-Quarantine','Symptoms-Quarantine', 'Positive-Admit']`
             
